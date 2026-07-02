@@ -1,9 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 import Products from "./pages/Products";
-
 import "./App.css";
 
 function App() {
