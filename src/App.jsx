@@ -1,15 +1,19 @@
-import './App.css'
-import ProductList from './ProductList'
-import Cart from './Cart'
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import Cart from "./pages/Cart";
+import Products from "./pages/Products";
+
+import "./App.css";
 
 function App() {
-
   return (
-    <>
-        <ProductList /> <hr />
-        <Cart />
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/products" element={<Products />} />
+      <Route path="/cart" element={<Cart />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
